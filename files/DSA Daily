@@ -1,0 +1,12 @@
+Problem 1: Two Sum
+Description:
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+Problem 2: Merge Intervals
+Description:
+Given a collection of intervals, merge all overlapping intervals.
+
+
+Problem 3: Longest Substring Without Repeating Characters
+Description:
+Given a string s, find the length of the longest substring without repeating characters.

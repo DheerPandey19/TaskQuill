@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskQuill</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 border-t-4 border-blue-600 text-white px-10">
+        <div class="flex items-center justify-center h-70">
+            <h1 style="font-size: 3rem; font-weight: 550; font-family: 'Montserrat', sans-serif; color: #ffffff; letter-spacing: 1px;">
+                TaskQuill
+            </h1>
+        </div>
+        <div class="data w-full min-h-4vh px-6 py-6 mt-6 text-white bg-zinc-800 rounded-lg">
+            <a class="text-blue-500 inline-block mb-8" href="/">Back to home</a>
+            <form action="/delete/<%= filename %>" method="POST" style="display: inline;">
+                <button type="submit" class="text-green-500 inline-block mb-8 ml-4">Mark as Done</button>
+            </form>
+            <h1 class="text-4xl font-family: 'Montserrat'; font-weight: 400; tracking-tighter"><%= filename.replace(/_/g, ' ') %></h1>
+            <pre class="text-l mt-5 text-zinc-400 whitespace-pre-wrap"><%= filedata %></pre>
+        </div>
+    </div>
+</body>
+</html>
